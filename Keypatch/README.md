@@ -1,6 +1,14 @@
 Keypatch
 ========
 
+
+
+### Feacture:
+
+**This IDA-Plguin is confirmed to work on IDA pro version 7.2**
+
+​                                                                                                           △
+
 Keypatch is [the award winning plugin](https://www.hex-rays.com/contests/2016/index.shtml) of [IDA Pro](https://www.hex-rays.com/products/ida/) for [Keystone Assembler Engine](http://keystone-engine.org).
 
 Keypatch consists of 3 tools inside.
@@ -48,7 +56,6 @@ Keypatch can be the missing piece in your toolset of reverse engineering.
 - On Windows, if you get an error message from IDA about "fail to load the dynamic library", then your machine may miss the VC++ runtime library. Fix that by downloading & installing it from https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 - On other \*nix platforms, the above error message means you do not have 32-bit Keystone installed yet. See [appendix section](#appendix-install-keystone-for-ida-pro) below for more instructions to fix this.
 
-
 ------------
 
 ### 3. Usage
@@ -92,7 +99,6 @@ Keypatch can be the missing piece in your toolset of reverse engineering.
 <p align="center">
 <img src="screenshots/keypatch_menupopup.png" height="300" />
 </p>
-
 --------------
 
 ### 4. Contact
