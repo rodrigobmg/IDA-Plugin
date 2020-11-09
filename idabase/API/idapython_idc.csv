@@ -1,0 +1,649 @@
+﻿Before,After
+"idc.DelExtLnB(ea, n)","ida_lines.del_extra_cmt(ea, E_NEXT + (n))"
+idc.Wait,ida_auto.auto_wait
+idc.OpHigh,idc.op_offset_high16
+idc.FIXUP_EXTDEF,ida_fixup.FIXUPF_EXTDEF
+idc.EnableTracing,idc.enable_tracing
+idc.Qword,idc.get_qword
+idc.isHead,ida_bytes.is_head
+"idc.NameEx(From, ea)","idc.get_name(ea, ida_name.GN_VISIBLE | calc_gtn_flags(From, ea))"
+idc.SetEnumIdx,ida_enum.set_enum_idx
+idc.GetConstEnum,ida_enum.get_enum_member_enum
+idc.ASCSTR_ULEN4,ida_nalt.STRTYPE_LEN4_16
+idc.MakeTbyte(ea),"ida_bytes.create_data(ea, FF_TBYTE, 10, ida_idaapi.BADADDR)"
+idc.isStroff1,ida_bytes.is_stroff1
+idc.SetStatus,ida_auto.set_ida_state
+idc.DelHiddenArea,ida_bytes.del_hidden_range
+idc.GetPrevBmask,ida_enum.get_prev_bmask
+idc.SelectThread,ida_dbg.select_thread
+idc.ExpandStruc,idc.expand_struc
+idc.GetDebuggerEvent,ida_dbg.wait_for_next_event
+idc.Sleep,idc.qsleep
+idc.RfirstB0,ida_xref.get_first_fcref_to
+idc.MakeStructEx,idc.create_struct
+idc.GetEntryName,ida_entry.get_entry_name
+idc.GetFirstBmask,ida_enum.get_first_bmask
+idc.LowVoids(x),"idc.set_inf_attr(INF_LOW_OFF, x)"
+idc.MakeByte(ea),"ida_bytes.create_data(ea, FF_BYTE, 1, ida_idaapi.BADADDR)"
+idc.GetThreadId,ida_dbg.getn_thread
+idc.AF2_FTAIL,ida_ida.AF_FTAIL
+idc.GetBptTevEa,ida_dbg.get_bpt_tev_ea
+idc.DelEnum,ida_enum.del_enum
+idc.ASCF_GEN,ida_ida.STRF_GEN
+idc.INF_REFCMTS,idc.INF_REFCMTNUM
+idc.RunTo,ida_dbg.run_to
+idc.GetArrayElement,idc.get_array_element
+idc.GetNsecStamp,idc.get_nsec_stamp
+idc.SetInputFilePath,ida_nalt.set_root_filename
+idc.DeleteArray,idc.delete_array
+idc.DelSelector,ida_segment.del_selector
+idc.SetFunctionAttr,idc.set_func_attr
+idc.OpEnumEx,idc.op_enum
+idc.SetDebuggerOptions,ida_dbg.set_debugger_options
+idc.AddStrucMember,idc.add_struc_member
+idc.GetEventModuleSize,idc.get_event_module_size
+idc.GetCurrentThreadId,ida_dbg.get_current_thread
+idc.GetProcessorName(),ida_ida.inf_get_procname()
+idc.MakeUnknown,ida_bytes.del_items
+idc.isSeg1,ida_bytes.is_seg1
+idc.isDefArg1,ida_bytes.is_defarg1
+idc.ASCSTR_UNICODE,ida_nalt.STRTYPE_C_16
+idc.SetFchunkAttr,idc.set_fchunk_attr
+idc.NextFunction,idc.get_next_func
+idc.SegEnd,idc.get_segm_end
+idc.GetPrevFixupEA,ida_fixup.get_prev_fixup_ea
+idc.DelArrayElement,idc.del_array_element
+idc.WinDbgCommand,idc.send_dbg_command
+idc.Exit,ida_pro.qexit
+idc.SetFchunkOwner,idc.set_tail_owner
+idc.GetConstEx,idc.get_enum_member
+idc.DelCodeXref,ida_xref.del_cref
+idc.DelLineNumber,ida_nalt.del_source_linnum
+idc.SetStrucIdx,idc.set_struc_idx
+idc.SetArrayLong,idc.set_array_long
+idc.AttachProcess,ida_dbg.attach_process
+idc.GetFunctionFlags(ea),"idc.get_func_attr(ea, FUNCATTR_FLAGS)"
+idc.GetFchunkReferer,ida_funcs.get_fchunk_referer
+idc.GetFirstConst,idc.get_first_enum_member
+idc.GetFunctionCmt,idc.get_func_cmt
+idc.GetProcessPid(idx),ida_dbg.get_processes()[idx].pid
+idc.isQwrd,ida_bytes.is_qword
+idc.GetNextIndex,idc.get_next_index
+idc.OpBinary,idc.op_bin
+idc.AF2_DOCODE,ida_ida.AF_DOCODE
+idc.GetLocalTinfo,idc.get_local_tinfo
+"idc.LineB(ea, n)","ida_lines.get_extra_cmt(ea, E_NEXT + (n))"
+idc.GetDisasmEx,idc.generate_disasm_line
+idc.DelStrucMember,idc.del_struc_member
+idc.GetMemberQty,idc.get_member_qty
+idc.DiffTraceFile,ida_dbg.diff_trace_file
+idc.GetNextFixupEA,ida_fixup.get_next_fixup_ea
+idc.SetLocalType,idc.set_local_type
+idc.toEA,idc.to_ea
+idc.BeginEA(),ida_ida.inf_get_min_ea()
+idc.GetFunctionAttr,idc.get_func_attr
+idc.INF_START_PRIVRANGE,idc.INF_PRIVRANGE_START_EA
+idc.INF_NAMELEN,idc.INF_MAX_AUTONAME_LEN
+idc.GetBptQty,ida_dbg.get_bpt_qty
+idc.StartDebugger,ida_dbg.start_process
+idc.GetProcessState,ida_dbg.get_process_state
+idc.PrevHead,idc.prev_head
+idc.PatchQword,ida_bytes.patch_qword
+idc.GetHashString,idc.get_hash_string
+idc.AnalyzeArea,idc.plan_and_wait
+"idc.MakeRptCmt(ea, cmt)","idc.set_cmt(ea, cmt, 1)"
+idc.Dfirst,ida_xref.get_first_dref_from
+idc.GetAppcallOptions(),idc.get_inf_attr(INF_APPCALL_OPTIONS)
+idc.isTbyt,ida_bytes.is_tbyte
+idc.SegDefReg,idc.set_default_sreg_value
+idc.SetRemoteDebugger,ida_dbg.set_remote_debugger
+idc.SegRename,idc.set_segm_name
+idc.DOUNK_SIMPLE,ida_bytes.DELIT_SIMPLE
+idc.GetModuleSize,idc.get_module_size
+idc.BochsCommand,idc.send_dbg_command
+idc.GetMemberSize,idc.get_member_size
+idc.Voids(x),"idc.set_flag(INF_OUTFLAGS, OFLG_SHOW_VOID, x)"
+idc.SetHiddenRange,idc.update_hidden_range
+idc.StepInto,ida_dbg.step_into
+idc.SetHashLong,idc.set_hash_long
+idc.GetFirstStrucIdx,ida_struct.get_first_struc_idx
+idc.GetIdbPath,idc.get_idb_path
+idc.GetConstCmt,idc.get_enum_member_cmt
+idc.SetLongPrm,idc.set_inf_attr
+idc.INF_HIGH_OFF,idc.INF_HIGHOFF
+idc.REF_VHIGH,ida_nalt.V695_REF_VHIGH
+idc.FindCode,ida_search.find_code
+idc.INF_END_PRIVRANGE,idc.INF_PRIVRANGE_END_EA
+idc.GetTevTid,ida_dbg.get_tev_tid
+idc.AddBptEx,ida_dbg.add_bpt
+idc.FF_TBYT,ida_bytes.FF_TBYTE
+idc.SetEnumCmt,ida_enum.set_enum_cmt
+idc.ApplySig,ida_funcs.plan_to_apply_idasgn
+idc.Til2Idb,idc.import_type
+idc.GetLastBmask,ida_enum.get_last_bmask
+idc.ProcessUiAction,ida_kernwin.process_ui_action
+idc.GetLocalTypeName,idc.get_numbered_type_name
+idc.OpChr,idc.op_chr
+idc.SetSegmentType,idc.set_segm_type
+idc.SetEnumWidth,ida_enum.set_enum_width
+"idc.OpOffset(ea, base)","idc.op_plain_offset(ea, -1, base)"
+idc.GetBptAttr,idc.get_bpt_attr
+idc.SETPROC_COMPAT,ida_idp.SETPROC_IDB
+idc.DbgWord,idc.read_dbg_word
+idc.GetLineNumber,ida_nalt.get_source_linnum
+idc.AskLong,ida_kernwin.ask_long
+idc.Compile(file),"idc.CompileEx(file, 1)"
+idc.FindBinary,idc.find_binary
+idc.ASCSTR_C,ida_nalt.STRTYPE_C
+idc.OpAlt,idc.op_man
+idc.OpHex,idc.op_hex
+idc.isChar1,ida_bytes.is_char1
+idc.GetEnumWidth,ida_enum.get_enum_width
+idc.SETPROC_ALL,ida_idp.SETPROC_LOADER_NON_FATAL
+idc.GetInputFilePath,ida_nalt.get_input_file_path
+idc.StartEA(),ida_ida.inf_get_min_ea()
+idc.Byte,idc.get_wide_byte
+idc.GetMaxLocalType,idc.get_ordinal_qty
+idc.XrefShow(x),"idc.set_inf_attr(INF_XREFNUM, x)"
+idc.Exec,idc.call_system
+idc.isStruct,ida_bytes.is_struct
+idc.GetNextStrucIdx,ida_struct.get_next_struc_idx
+idc.NextFchunk,idc.get_next_fchunk
+idc.AF2_STKARG,ida_ida.AF_STKARG
+idc.GetConstByName,ida_enum.get_enum_member_by_name
+idc.Dword,idc.get_wide_dword
+idc.DOUNK_EXPAND,ida_bytes.DELIT_EXPAND
+idc.DelHiddenRange,ida_bytes.del_hidden_range
+idc.SEGDEL_KEEP,ida_segment.SEGMOD_KEEP
+idc.SetArrayFormat,idc.set_array_params
+idc.GetStrucIdx,ida_struct.get_struc_idx
+idc.GetOriginalByte,ida_bytes.get_original_byte
+idc.SetSegBounds,idc.set_segment_bounds
+idc.SetFunctionEnd,ida_funcs.set_func_end
+idc.ASCSTR_PASCAL,ida_nalt.STRTYPE_PASCAL
+"idc.OpEnum(ea, n, enumid)","idc.op_enum(ea, n, enumid, 0)"
+idc.MakeWord(ea),"ida_bytes.create_data(ea, FF_WORD, 2, ida_idaapi.BADADDR)"
+idc.GetEventId,idc.get_event_id
+idc.FF_OWRD,ida_bytes.FF_OWORD
+"idc.AddConst(enum_id, name, value)","idc.add_enum_member(enum_id, name, value, -1)"
+"idc.MakeStruct(ea, name)","idc.create_struct(ea, -1, name)"
+idc.GetStrucComment,ida_struct.get_struc_cmt
+idc.FindVoid,ida_search.find_suspop
+idc.GetLastIndex,idc.get_last_index
+idc.Indent(x),"idc.set_inf_attr(INF_INDENT, x)"
+idc.MakePackReal(ea),"ida_bytes.create_data(ea, FF_PACKREAL, 10, ida_idaapi.BADADDR)"
+idc.ResumeProcess,idc.resume_process
+idc.MakeYword(ea),"ida_bytes.create_data(ea, FF_YWORD, 32, ida_idaapi.BADADDR)"
+idc.EnableBpt,ida_dbg.enable_bpt
+idc.GetReg,idc.get_sreg
+idc.GetFirstHashKey,idc.get_first_hash_key
+idc.SetStrucComment,ida_struct.set_struc_cmt
+idc.GetMemberOffset,idc.get_member_offset
+idc.DelFixup,ida_fixup.del_fixup
+idc.DOUNK_DELNAMES,ida_bytes.DELIT_DELNAMES
+idc.MakeLocal,idc.define_local_var
+idc.SetBmaskCmt,idc.set_bmask_cmt
+idc.SetFixup,idc.set_fixup
+idc.CheckBpt,ida_dbg.check_bpt
+idc.MakeCode,idc.create_insn
+idc.FF_STRU,ida_bytes.FF_STRUCT
+idc.DbgByte,idc.read_dbg_byte
+idc.SetStrucAlign,idc.set_struc_align
+idc.MoveSegm,idc.move_segm
+idc.INF_SIZEOF_ALGN,idc.INF_CC_DEFALIGN
+"idc.DelExtLnA(ea, n)","ida_lines.del_extra_cmt(ea, E_PREV + (n))"
+idc.DelHotkey,ida_kernwin.del_idc_hotkey
+idc.AutoUnmark,ida_auto.auto_unmark
+idc.GetFixupTgtType,idc.get_fixup_target_type
+idc.FindExplored,ida_search.find_defined
+"idc.LineA(ea, n)","ida_lines.get_extra_cmt(ea, E_PREV + (n))"
+idc.SetHashString,idc.set_hash_string
+idc.FF_ASCI,ida_bytes.FF_STRLIT
+idc.GetEntryPoint,ida_entry.get_entry
+idc.isDouble,ida_bytes.is_double
+idc.DbgWrite,idc.write_dbg_memory
+idc.LocByName,idc.get_name_ea_simple
+idc.GetEntryOrdinal,ida_entry.get_entry_ordinal
+idc.OpStroffEx,idc.op_stroff
+idc.GuessType,idc.guess_type
+idc.SetMemberName,idc.set_member_name
+idc.SetManualInsn,ida_bytes.set_manual_insn
+idc.FindSelector,idc.find_selector
+idc.AddEnum,idc.add_enum
+idc.UTP_ENUM,ida_typeinf.UTP_ENUM
+idc.ClearTraceFile,idc.clear_trace
+idc.FindText,idc.find_text
+idc.RnextB,ida_xref.get_next_cref_to
+"idc.MakeComm(ea, cmt)","idc.set_cmt(ea, cmt, 0)"
+idc.RenameArray,idc.rename_array
+idc.GetInputFile,ida_nalt.get_root_filename
+idc.REF_VLOW,ida_nalt.V695_REF_VLOW
+idc.PatchDword,ida_bytes.patch_dword
+idc.UMessage,ida_kernwin.msg
+idc.OpNum(ea),"idc.op_num(ea, -1)"
+idc.SegCreate,idc.AddSeg
+idc.DelConstEx,idc.del_enum_member
+idc.INF_LOW_OFF,idc.INF_LOWOFF
+idc.RecalcSpd,ida_frame.recalc_spd
+idc.SegName,idc.get_segm_name
+idc.FIXUP_UNUSED,ida_fixup.FIXUPF_UNUSED
+idc.PrevFchunk,idc.get_prev_fchunk
+idc.AF2_TRFUNC,ida_ida.AF_TRFUNC
+idc.INF_SIZEOF_SHORT,idc.INF_CC_SIZE_S
+idc.SaveBase,idc.save_database
+"idc.GetConst(id, v, mask)","idc.get_enum_member(id, v, 0, mask)"
+idc.MakeAlign,ida_bytes.create_align
+idc.GetTevEa,ida_dbg.get_tev_ea
+idc.AddHotkey,ida_kernwin.add_idc_hotkey
+idc.GetStrucIdByName,ida_struct.get_struc_id
+idc.GetTraceDesc,ida_dbg.set_trace_file_desc
+idc.Comments(x),"idc.set_flag(INF_CMTFLAG, SW_ALLCMT, x)"
+idc.RebaseProgram,ida_segment.rebase_program
+idc.Rnext,ida_xref.get_next_cref_from
+idc.LoadDebugger,ida_dbg.load_debugger
+idc.INF_TYPE_XREFS,idc.INF_TYPE_XREFNUM
+idc.GetNextConst,idc.get_next_enum_member
+idc.AddSourceFile,ida_lines.add_sourcefile
+idc.GetBmaskCmt,idc.get_bmask_cmt
+idc.CommentEx,ida_bytes.get_cmt
+idc.GetSourceFile,ida_lines.get_sourcefile
+idc.DecodeInstruction,ida_ua.decode_insn
+idc.Rfirst0,ida_xref.get_first_fcref_from
+idc.EndTypeUpdating,ida_typeinf.end_type_updating
+idc.Batch,idc.batch
+idc.PatchDbgByte,idc.patch_dbg_byte
+idc.DelFunction,ida_funcs.del_func
+idc.RunPythonStatement,idc.exec_python
+idc.AddSegEx,idc.add_segm_ex
+idc.FindFuncEnd,idc.find_func_end
+idc.GetStrucSize,ida_struct.get_struc_size
+idc.SetTargetAssembler,ida_idp.set_target_assembler
+idc.SetSpDiff,ida_frame.add_user_stkpnt
+idc.OpDec(ea),"idc.op_dec(ea, -1)"
+idc.RptCmt(ea),"idc.get_cmt(ea, 1)"
+idc.RenameEntryPoint,ida_entry.rename_entry
+idc.AF2_ANORET,ida_ida.AF_ANORET
+idc.INF_CMTFLAG,idc.INF_CMTFLG
+idc.AddEntryPoint,ida_entry.add_entry
+idc.StepUntilRet,ida_dbg.step_until_ret
+idc.MakeDword(ea),"ida_bytes.create_data(ea, FF_DWORD, 4, ida_idaapi.BADADDR)"
+idc.MaxEA(),ida_ida.inf_get_max_ea()
+idc.ChangeConfig,idc.process_config_line
+idc.MK_FP,idc.to_ea
+"idc.ExtLinA(ea, n, line)","ida_lines.update_extra_cmt(ea, E_PREV + (n), line)"
+idc.SendGDBMonitor,idc.send_dbg_command
+idc.SetConstName,ida_enum.set_enum_member_name
+idc.RefreshDebuggerMemory,ida_dbg.refresh_debugger_memory
+idc.GetFlags,ida_bytes.get_full_flags
+idc.SelEnd,idc.read_selection_end
+idc.SuspendThread,ida_dbg.suspend_thread
+idc.isPackReal,ida_bytes.is_pack_real
+idc.SetShortPrm,idc.set_inf_attr
+idc.SetAppcallOptions(x),"idc.set_inf_attr(INF_APPCALL_OPTIONS, x)"
+idc.AskSelector,idc.sel2para
+idc.Rnext0,ida_xref.get_next_fcref_from
+idc.isStkvar1,ida_bytes.is_stkvar1
+idc.GetColor,idc.get_color
+idc.AddCodeXref,ida_xref.add_cref
+idc.Comment(ea),"idc.get_cmt(ea, 0)"
+idc.DetachProcess,ida_dbg.detach_process
+idc.DbgRead,idc.read_dbg_memory
+idc.StringStp(x),"idc.set_inf_attr(INF_STRLIT_BREAK, x)"
+idc.FF_DWRD,ida_bytes.FF_DWORD
+idc.GetEnumName,ida_enum.get_enum_name
+idc.GetMemberFlag,idc.get_member_flag
+idc.DelStruc,idc.del_struc
+idc.ask_selector,idc.sel2para
+idc.SetEnumName,ida_enum.set_enum_name
+idc.GetType,idc.get_type
+idc.GetProcessQty(),ida_dbg.get_processes().size
+idc.SetRegEx,idc.split_sreg_range
+idc.AddBpt,ida_dbg.add_bpt
+"idc.CompileEx(input, is_file)",idc.compile_idc_file(input) if is_file else compile_idc_text(input)
+idc.isDwrd,ida_bytes.is_dword
+idc.ApplyType,idc.apply_type
+idc.OpOctal,idc.op_oct
+idc.BeginTypeUpdating,ida_typeinf.begin_type_updating
+idc.ChooseFunction,idc.choose_func
+idc.GetMinSpd,idc.get_min_spd_ea
+idc.GetFixupTgtDispl,idc.get_fixup_target_dis
+idc.isOff0,ida_bytes.is_off0
+idc.SegStart,idc.get_segm_start
+idc.MinEA(),ida_ida.inf_get_min_ea()
+idc.GetTevRegMemEa,ida_dbg.get_tev_mem_ea
+idc.LocByName,idc.get_name_ea_simple
+idc.GetLongPrm,idc.get_inf_attr
+idc.SetCharPrm,idc.set_inf_attr
+idc.FirstFuncFchunk,idc.first_func_chunk
+idc.SetArrayString,idc.set_array_string
+idc.INF_COMPILER,idc.INF_CC_ID
+idc.Demangle,idc.demangle_name
+idc.SetMemberType,idc.set_member_type
+idc.isOff1,ida_bytes.is_off1
+idc.GetStrucId,ida_struct.get_struc_by_idx
+idc.XrefType,idc.get_xref_type
+idc.RefreshLists,ida_kernwin.refresh_choosers
+idc.Name(ea),"idc.get_name(ea, ida_name.GN_VISIBLE)"
+idc.ItemHead,ida_bytes.get_item_head
+idc.MakeQword(ea),"ida_bytes.create_data(ea, FF_QWORD, 8, ida_idaapi.BADADDR)"
+"idc.GetTrueNameEx(From, ea)","idc.get_name(ea, calc_gtn_flags(From, ea))"
+"idc.SegComb(ea, comb)","idc.set_segm_attr(ea, SEGATTR_COMB, comb)"
+idc.isEnum1,ida_bytes.is_enum1
+idc.INF_SIZEOF_LLONG,idc.INF_CC_SIZE_LL
+idc.GetFixupTgtOff,idc.get_fixup_target_off
+idc.GetEventModuleBase,idc.get_event_module_base
+idc.auto_make_code(x),"idc.auto_mark_range(x, (x)+1, AU_CODE);"
+idc.ParseTypes,idc.parse_decls
+idc.ASCSTR_TERMCHR,ida_nalt.STRTYPE_TERMCHR
+idc.GetStringType,idc.get_str_type
+idc.GetLastConst,idc.get_last_enum_member
+idc.GetManyBytes,idc.get_bytes
+idc.AutoMark2,ida_auto.auto_mark_range
+idc.INF_BINPREF,idc.INF_BIN_PREFIX_SIZE
+idc.GetThreadQty,ida_dbg.get_thread_qty
+idc.ArmForceBLJump,idc.force_bl_jump
+idc.LoadTraceFile,ida_dbg.load_trace_file
+idc.GetTinfo,idc.get_tinfo
+idc.FIXUP_REL,ida_fixup.FIXUPF_REL
+idc.SegAddrng,idc.set_segm_addressing
+idc.SetSegmentAttr,idc.set_segm_attr
+idc.ResumeThread,ida_dbg.resume_thread
+idc.DnextB,ida_xref.get_next_dref_to
+idc.ExecIDC,idc.exec_idc
+idc.GetFchunkAttr,idc.get_fchunk_attr
+idc.GetFunctionName,idc.get_func_name
+idc.NextNotTail,ida_bytes.next_not_tail
+idc.GetArrayId,idc.get_array_id
+idc.SEGDEL_PERM,ida_segment.SEGMOD_KILL
+idc.AddUserStkPnt,ida_frame.add_user_stkpnt
+idc.GetEnumCmt,ida_enum.get_enum_cmt
+idc.GetEventExceptionCode,idc.get_event_exc_code
+idc.SetConstCmt,ida_enum.set_enum_member_cmt
+idc.MakeOword(ea),"ida_bytes.create_data(ea, FF_OWORD, 16, ida_idaapi.BADADDR)"
+idc.SetMemberComment,idc.set_member_cmt
+idc.SegBounds,idc.set_segment_bounds
+idc.OpSegment(ea),"idc.op_seg(ea, -1)"
+idc.GetFirstModule,idc.get_first_module
+idc.DefineException,ida_dbg.define_exception
+idc.GenFuncGdl,idc.gen_flow_graph
+idc.TailDepth(x),"idc.set_inf_attr(INF_MAXREF, x)"
+idc.AF2_SIGMLT,ida_ida.AF_SIGMLT
+idc.DelStkPnt,idc.del_stkpnt
+idc.SetLineNumber,ida_nalt.set_source_linnum
+idc.DeleteAll,idc.delete_all_segments
+idc.RfirstB,ida_xref.get_first_cref_to
+idc.isCode,ida_bytes.is_code
+idc.INF_SHORT_DN,idc.INF_SHORT_DEMNAMES
+idc.SendDbgCommand,idc.send_dbg_command
+idc.OpOffEx,idc.op_offset
+"idc.AddStruc(index, name)","idc.add_struc(index, name, 0)"
+idc.INF_SIZEOF_LONG,idc.INF_CC_SIZE_L
+idc.INF_LONG_DN,idc.INF_LONG_DEMNAMES
+idc.GetFuncOffset,idc.get_func_off_str
+idc.StopDebugger,ida_dbg.exit_process
+idc.GetCharPrm,idc.get_inf_attr
+idc.MakeFloat(ea),"ida_bytes.create_data(ea, FF_FLOAT, 4, ida_idaapi.BADADDR)"
+idc.GetPrevStrucIdx,ida_struct.get_prev_struc_idx
+idc.isUnknown,ida_bytes.is_unknown
+idc.GetEntryPointQty,ida_entry.get_entry_qty
+"idc.ExtLinB(ea, n, line)","ida_lines.update_extra_cmt(ea, E_NEXT + (n), line)"
+idc.GetInputMD5,ida_nalt.retrieve_input_file_md5
+idc.python_on(),"ida_loader.load_and_run_plugin(""idapython"", 3)"
+idc.AF2_DODATA,ida_ida.AF_DODATA
+idc.OpChar(ea),"idc.op_chr(ea, -1)"
+idc.IsEventHandled,idc.is_event_handled
+"idc.SetFunctionFlags(ea, flags)","idc.set_func_attr(ea, FUNCATTR_FLAGS, flags)"
+idc.SegByBase,idc.get_segm_by_sel
+idc.HighVoids(x),"idc.set_inf_attr(INF_HIGH_OFF, x)"
+idc.ASCSTR_LEN4,ida_nalt.STRTYPE_LEN4
+idc.GetConstName,idc.get_enum_member_name
+idc.FindData,ida_search.find_data
+idc.HideRange,ida_bytes.add_hidden_range
+idc.GetMemberComment,idc.get_member_cmt
+"idc.MakeCustomData(ea, size, dtid, fid)","ida_bytes.create_data(ea, FF_CUSTOM, size, dtid|((fid)<<16))"
+"idc.SegAlign(ea, alignment)","idc.set_segm_attr(ea, SEGATTR_ALIGN, alignment)"
+idc.INF_MODEL,idc.INF_CC_CM
+idc.GetEventInfo,idc.get_event_info
+idc.OpDecimal,idc.op_dec
+idc.PatchByte,ida_bytes.patch_byte
+idc.AnalyzeRange,idc.plan_and_wait
+"idc.WriteTxt(path, ea1, ea2)","idc.gen_file(OFILE_ASM, path, ea1, ea2, 0)"
+idc.GetEventExceptionInfo,idc.get_event_exc_info
+idc.SetSegAddressing,idc.set_segm_addressing
+idc.INF_SIZEOF_INT,idc.INF_CC_SIZE_I
+idc.GetRegValue,idc.get_reg_value
+idc.GetDebuggerEventCondition,ida_dbg.get_debugger_event_cond
+idc.AF2_DATOFF,ida_ida.AF_DATOFF
+idc.MarkPosition,idc.put_bookmark
+idc.OpStkvar,idc.op_stkvar
+idc.AF_ASCII,ida_ida.AF_STRLIT
+idc.AskAddr,ida_kernwin.ask_addr
+idc.isEnabled,ida_bytes.is_mapped
+idc.GetEnumIdx,ida_enum.get_enum_idx
+idc.GetnEnum,ida_enum.getn_enum
+idc.GetManualInsn,ida_bytes.get_manual_insn
+idc.GetEventExceptionEa,idc.get_event_exc_ea
+idc.SetColor,idc.set_color
+idc.LoadTil,idc.add_default_til
+idc.ASCF_AUTO,ida_ida.STRF_AUTO
+idc.GetPrevIndex,idc.get_prev_index
+idc.SegByName,idc.selector_by_name
+idc.GetStrucPrevOff,idc.get_prev_offset
+idc.PrevAddr,ida_bytes.prev_addr
+idc.isStroff0,ida_bytes.is_stroff0
+idc.IsBitfield,ida_enum.is_bf
+idc.GetEventTid,idc.get_event_tid
+idc.GetFrameArgsSize(ea),"idc.get_func_attr(ea, FUNCATTR_ARGSIZE)"
+idc.AskYN,ida_kernwin.ask_yn
+"idc.DelConst(id, v, mask)","idc.del_enum_member(id, v, 0, mask)"
+idc.ArmForceBLCall,idc.force_bl_call
+idc.GetEventModuleName,idc.get_event_module_name
+idc.isWord,ida_bytes.is_word
+idc.RnextB0,ida_xref.get_next_fcref_to
+idc.AF2_HFLIRT,ida_ida.AF_HFLIRT
+idc.WriteExe(path),"idc.gen_file(OFILE_EXE, path, 0, BADADDR, 0)"
+idc.AddBpt,idc.add_bpt
+idc.GenCallGdl,idc.gen_simple_call_chart
+idc.AF2_CHKUNI,ida_ida.AF_CHKUNI
+idc.GetTevCallee,ida_dbg.get_call_tev_callee
+idc.isLoaded,ida_bytes.is_loaded
+idc.OpFloat,idc.op_flt
+idc.GetTevType,ida_dbg.get_tev_type
+idc.GetMnem,idc.print_insn_mnem
+idc.PrevNotTail,ida_bytes.prev_not_tail
+idc.SetStorageType,ida_bytes.change_storage_type
+idc.OpNumber,idc.op_num
+idc.DbgQword,idc.read_dbg_qword
+idc.ASCF_SAVECASE,ida_ida.STRF_SAVECASE
+idc.set_start_cs(x),"idc.set_inf_attr(INF_START_CS, x)"
+idc.GetPrevConst,idc.get_prev_enum_member
+idc.ItemEnd,ida_bytes.get_item_end
+idc.GetMarkedPos,idc.get_bookmark
+idc.GetCurrentLine,idc.get_curline
+idc.GetEventExitCode,idc.get_event_exit_code
+idc.DbgDword,idc.read_dbg_dword
+idc.FF_QWRD,ida_bytes.FF_QWORD
+idc.GetFirstMember,idc.get_first_member
+idc.GetFrame(ea),"idc.get_func_attr(ea, FUNCATTR_FRAME)"
+"idc.AskIdent(defval, prompt)","ida_kernwin.ask_str(defval, ida_kernwin.HIST_IDENT, prompt)"
+idc.Word,idc.get_wide_word
+idc.GetEnumSize,ida_enum.get_enum_size
+idc.begin_type_updating,ida_typeinf.begin_type_updating
+idc.GetOperandValue,idc.get_operand_value
+idc.ASCSTR_LEN2,ida_nalt.STRTYPE_LEN2
+idc.IsUnion,idc.is_union
+idc.GetTrueName,ida_name.get_ea_name
+idc.LocByNameEx,ida_name.get_name_ea
+idc.SelStart,idc.read_selection_start
+idc.RenameSeg,idc.set_segm_name
+idc.AF2_JUMPTBL,ida_ida.AF_JUMPTBL
+idc.SetSegDefReg,idc.set_default_sreg_value
+idc.TakeMemorySnapshot,ida_segment.take_memory_snapshot
+idc.AF2_PURDAT,ida_ida.AF_PURDAT
+idc.GetLastHashKey,idc.get_last_hash_key
+idc.GetStepTraceOptions,ida_dbg.get_step_trace_options
+idc.GetTevRegMemQty,ida_dbg.get_tev_mem_qty
+idc.GetShortPrm,idc.get_inf_attr
+idc.SetRegValue,idc.set_reg_value
+idc.AskSeg,ida_kernwin.ask_seg
+idc.GetFrameLvarSize(ea),"idc.get_func_attr(ea, FUNCATTR_FRSIZE)"
+idc.SetDebuggerEventCondition,ida_dbg.set_debugger_event_cond
+idc.PatchWord,ida_bytes.patch_word
+idc.isSeg0,ida_bytes.is_seg0
+idc.PauseProcess,ida_dbg.suspend_process
+idc.MakeData,ida_bytes.create_data
+idc.GetTevRegVal,ida_dbg.get_tev_reg
+idc.MakeFrame,idc.set_frame_size
+idc.GetLastStrucIdx,ida_struct.get_last_struc_idx
+idc.SetEnumBf,ida_enum.set_enum_bf
+idc.MakeUnkn,ida_bytes.del_items
+idc.GetEventBptHardwareEa,idc.get_event_bpt_hea
+idc.SetSegClass,idc.set_segm_class
+idc.OpOff,idc.op_plain_offset
+idc.Message,ida_kernwin.msg
+idc.Refresh,ida_kernwin.refresh_idaview_anyway
+idc.patch_long,ida_bytes.patch_dword
+idc.GetNextBmask,ida_enum.get_next_bmask
+idc.GetTevRegMem,ida_dbg.get_tev_mem
+idc.GetSpDiff,idc.get_sp_delta
+idc.GetMemberStrId,idc.get_member_strid
+"idc.OpAlt2(ea, str)","idc.op_man(ea, 1, str)"
+idc.ScreenEA,idc.get_screen_ea
+idc.isAlign,ida_bytes.is_align
+idc.DelSourceFile,ida_lines.del_sourcefile
+idc.FIXUP_BYTE,ida_fixup.FIXUP_OFF8
+idc.GetLastMember,idc.get_last_member
+idc.AskFile,ida_kernwin.ask_file
+idc.AddConstEx,idc.add_enum_member
+idc.GetMemberName,idc.get_member_name
+idc.UTP_STRUCT,ida_typeinf.UTP_STRUCT
+idc.AutoShow(x),"idc.set_flag(INF_OUTFLAGS, OFLG_SHOW_AUTO, x)"
+idc.SetBptCnd,idc.set_bpt_cond
+idc.GetEnumQty,ida_enum.get_enum_qty
+idc.GetOpType,idc.get_operand_type
+idc.isDefArg0,ida_bytes.is_defarg0
+idc.ASCF_SERIAL,ida_ida.STRF_SERIAL
+idc.GetEnumFlag,ida_enum.get_enum_flag
+idc.RemoveFchunk,idc.remove_fchunk
+idc.GetStrucQty,ida_struct.get_struc_qty
+idc.GetSegmentAttr,idc.get_segm_attr
+idc.DfirstB,ida_xref.get_first_dref_to
+idc.isFloat,ida_bytes.is_float
+idc.SETPROC_FATAL,ida_idp.SETPROC_LOADER
+idc.GetBmaskName,idc.get_bmask_name
+idc.GetBptEA,idc.get_bpt_ea
+idc.ASCF_COMMENT,ida_ida.STRF_COMMENT
+idc.INF_SIZEOF_BOOL,idc.INF_CC_SIZE_B
+idc.Rfirst,ida_xref.get_first_cref_from
+idc.WriteMap(path),"idc.gen_file(OFILE_MAP, path, 0, BADADDR, GENFLG_MAPSEG|GENFLG_MAPNAME)"
+idc.PrintLocalTypes,idc.print_decls
+idc.set_start_ip(x),"idc.set_inf_attr(INF_START_IP, x)"
+idc.NextFuncFchunk,idc.next_func_chunk
+idc.SetStrucName,ida_struct.set_struc_name
+idc.IdbByte,ida_bytes.get_db_byte
+idc.SetBptCndEx,idc.set_bpt_cond
+idc.SetStepTraceOptions,ida_dbg.set_step_trace_options
+idc.GetTevReturn,ida_dbg.get_ret_tev_return
+idc.SetBptAttr,idc.set_bpt_attr
+"idc.AddUnion(index, name)","idc.add_struc(index, name, 1)"
+idc.CanExceptionContinue,idc.can_exc_continue
+idc.SegDelete,idc.del_segm
+idc.GetEventPid,idc.get_event_pid
+idc.GetRegValue,idc.get_reg_value
+idc.Jump,ida_kernwin.jumpto
+"idc.MakeName(ea, name)","idc.set_name(ea, name, SN_CHECK)"
+idc.SaveTraceFile,ida_dbg.save_trace_file
+idc.GetEventEa,idc.get_event_ea
+idc.AnalyseArea,idc.plan_and_wait
+idc.AF2_SIGCMT,ida_ida.AF_SIGCMT
+idc.GetMarkComment,idc.get_bookmark_desc
+idc.isByte,ida_bytes.is_byte
+idc.PrevFunction,idc.get_prev_func
+idc.INF_BORDER,idc.INF_LIMITER
+idc.isData,ida_bytes.is_data
+idc.GetSpd,idc.get_spd
+idc.CheckTraceFile,ida_dbg.is_valid_trace_file
+idc.end_type_updating,ida_typeinf.end_type_updating
+idc.SEGDEL_SILENT,ida_segment.SEGMOD_SILENT
+idc.GetFixupTgtFlags,idc.get_fixup_target_flags
+idc.GetStrucNextOff,idc.get_next_offset
+idc.AppendFchunk,idc.append_func_tail
+idc.GetInputFileSize,idc.retrieve_input_file_size
+idc.Eval,idc.eval_idc
+idc.DelHashElement,idc.del_hash_string
+idc.FIXUP_CREATED,ida_fixup.FIXUPF_CREATED
+idc.isChar0,ida_bytes.is_char0
+"idc.OpStroff(ea, n, strid)","idc.op_stroff(ea, n, strid, 0)"
+idc.SetProcessorType,ida_idp.set_processor_type
+idc.Dnext,ida_xref.get_next_dref_from
+idc.SetFunctionCmt,idc.set_func_cmt
+idc.GetFrameSize,idc.get_frame_size
+idc.isTail,ida_bytes.is_tail
+idc.ItemSize,idc.get_item_size
+idc.CreateArray,idc.create_array
+idc.GetConstValue,ida_enum.get_enum_member_value
+idc.ValidateNames,idc.validate_idb_names
+idc.isFlow,ida_bytes.is_flow
+idc.GetConstBmask,ida_enum.get_enum_member_bmask
+idc.AddStrucEx,idc.add_struc
+"idc.OpAlt1(ea, str)","idc.op_man(ea, 0, str)"
+idc.GetString,ida_bytes.get_strlit_contents
+idc.NextAddr,ida_bytes.next_addr
+idc.MakeFunction,ida_funcs.add_func
+idc.SetBmaskName,idc.set_bmask_name
+idc.GetStrucName,ida_struct.get_struc_name
+idc.MakeNameEx,idc.set_name
+idc.SetEnumFlag,ida_enum.set_enum_flag
+idc.StepOver,ida_dbg.step_over
+idc.isStkvar0,ida_bytes.is_stkvar0
+idc.Analysis(x),"idc.set_flag(INF_GENFLAGS, INFFL_AUTO, x)"
+idc.SegClass,idc.set_segm_class
+idc.GetFixupTgtSel,idc.get_fixup_target_sel
+idc.MakeDouble(ea),"ida_bytes.create_data(ea, FF_DOUBLE, 8, ida_idaapi.BADADDR)"
+idc.GetString,idc.get_strlit_contents
+idc.AnalyseRange,idc.plan_and_wait
+idc.GetMaxTev,ida_dbg.get_tev_qty
+idc.ASCSTR_ULEN2,ida_nalt.STRTYPE_LEN2_16
+idc.GetEnum,ida_enum.get_enum
+idc.AddAutoStkPnt2,idc.add_auto_stkpnt
+idc.DelBpt,ida_dbg.del_bpt
+idc.isOwrd,ida_bytes.is_oword
+idc.GetHashLong,idc.get_hash_long
+idc.GetModuleName,idc.get_module_name
+idc.INF_XREFS,idc.INF_XREFFLAG
+idc.SetTraceDesc,ida_dbg.get_trace_file_desc
+idc.GetNextHashKey,idc.get_next_hash_key
+idc.OpSeg,idc.op_seg
+idc.DelSeg,ida_segment.del_segm
+"idc.SetReg(ea, reg, value)","idc.split_sreg_range(ea, reg, value, SR_user)"
+idc.isASCII,ida_bytes.is_strlit
+idc.INF_SIZEOF_ENUM,idc.INF_CC_SIZE_E
+idc.GetProcessName(idx),ida_dbg.get_processes()[idx].name
+idc.GenerateFile,idc.gen_file
+idc.FindImmediate,ida_search.find_imm
+idc.GetNextModule,idc.get_next_module
+idc.RunPlugin,ida_loader.load_and_run_plugin
+"idc.AskStr(defval, prompt)","ida_kernwin.ask_str(defval, 0, prompt)"
+idc.NextSeg,idc.get_next_seg
+idc.ParseType,idc.parse_decl
+idc.SetSelector,ida_segment.set_selector
+idc.INF_SIZEOF_LDBL,idc.INF_CC_SIZE_LDBL
+idc.OpSign,idc.toggle_sign
+idc.GetIdaDirectory,idc.idadir
+idc.INF_CHANGE_COUNTER,idc.INF_DATABASE_CHANGE_COUNT
+idc.AltOp,ida_bytes.get_forced_operand
+idc.isEnum0,ida_bytes.is_enum0
+idc.NextHead,idc.next_head
+idc.FirstSeg,idc.get_first_seg
+idc.hasValue,ida_bytes.has_value
+idc.AF2_VERSP,ida_ida.AF_VERSP
+idc.FindUnexplored,ida_search.find_unknown
+idc.GetPrevHashKey,idc.get_prev_hash_key
+idc.AF2_REGARG,ida_ida.AF_REGARG
+idc.CmtIndent(x),"idc.set_inf_attr(INF_COMMENT, x)"
+idc.GetMemberId,idc.get_member_id
+idc.OpNot,idc.toggle_bnot
+idc.GetFrameRegsSize(ea),"idc.get_func_attr(ea, FUNCATTR_FRREGS)"
+idc.GetOpnd,idc.print_operand
+idc.MakeArray,idc.make_array
+idc.GetFirstIndex,idc.get_first_index
