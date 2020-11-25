@@ -5,7 +5,7 @@ import ida_funcs
 
 
 def make_name():
-    callz = du.find_all_calls_to(f_name='logging')
+    callz = du.find_all_calls_to(f_name='log_info')
     for co in callz:
 
         # The *second* argument of ``GetProcAddress`` is the API name
