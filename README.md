@@ -10,12 +10,11 @@
 
 ## script
 一些我写的或者收集的脚本
-1. **makefunc**
+1. **makefunc**     
 对所有未 'P' 的函数做 `makefunc`
-2. **rename_by_handle**
-
-根据一些 handle 来重命名函数
-3.  **raname_by_logfunction**
+2. **rename_by_handle**    
+根据一些 handle 来重命名函数    
+3.  **raname_by_logfunction**      
 根据 log 函数来重命名函数
 
 4. **do_oof**
